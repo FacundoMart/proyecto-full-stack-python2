@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+header {
+    display: flex; /* para alinear los elementos en una fila */
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: space-between; /* hace la distribucion de elementos en el espacio disponible */
+    padding: 1px 35px 0px; 
+    background-color: #daf7a6 ; /* color de fondo del encabezado */
+    color: #fff; /* Cambia el color del texto en el encabezado */
+}
+
+/* para el logo */
+.logo-header {
+    margin-right: auto; /*colocamos logo en la izquierda */
+}
+
+/* para la barra de búsqueda */
+.barra-busqueda {
+    flex: 1;
+    display: flex;
+    max-width: 33.33%; /* limita el ancho a un tercio de la pantalla */
+    justify-content: center; /* centra la barra de búsqueda */
+}
+
+/* para el input de búsqueda */
+.barra-busqueda input[type="text"] {
+    flex: 1; /* Hace que el input de búsqueda ocupe el espacio restante */
+    padding: 10px; /* Añade relleno para mejorar la apariencia */
+    border: 1px solid #ccc; /* Añade un borde al input */
+    border-radius: 4px; /* Añade bordes redondeados */
+} 
+
+/* para el botón de búsqueda */
+.barra-busqueda button {
+    padding: 10px 15px; /* para mejorar la apariencia */
+    background-color: #27dc2b; /* Cambia el color de fondo del botón */
+    color: #fff; /* Cambia el color del texto del botón */
+    border: none; /* Quita el borde del botón */
+    border-radius: 4px; /* Añade bordes redondeados */
+    cursor: pointer; /* aparece la manito al pasar sobre el botón */
+}
+
+/* para los íconos de inicio de sesión y carrito de compra */
+.iconos {
+    display: flex; /* Utiliza flexbox para alinear los íconos en una fila */
+    margin-left: auto; /* Empuja los íconos hacia la derecha */
+    color: #289976;
+    cursor: pointer;
+}
+
+/* para los íconos individuales */
+.iconos i {
+    font-size: 30px; /* Tamaño de los íconos */
+    margin-left: 40px; /* Espacio entre los íconos */
+}
+
+/*para el menu de navegacion*/
+
+.menu-navegacion {
+    display: flex; /*para centrar los elementos */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    background-color: #f0e00bbd;
+    padding: 8px 15px;
+}
+
+.menu-navegacion ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* uso flexbox para alinear los elementos de la lista */
+}
+
+.menu-navegacion li {
+    margin-right: 20px;
+    margin-left: 40px;
+}
+
+.menu-navegacion a {
+    text-decoration: none; /* saca la subrayado de los enlaces */
+    color: #333; /* Color del texto de los enlaces */
+    font-size: 16px; /* Estilo de fuente */
+    
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-left: 110px;
+    margin-right: 110px;
+}
+
+h1{
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-left: 110px;
+    margin-right: 110px;
+}
+
+/* para la sección "mis cursos" */
+
+.curso {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.mis-cursos {
+    padding: 10px;
+    background-color: #f9f9f9;
+    padding: 10px, 110px;
+}
+
+.mis-cursos h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+.curso-imagen img {
+    max-width: 300px;
+    height: auto;
+    margin-right: 20px;
+    
+}
+
+.curso-info h3 {
+    font-size: 20px;
+    margin: 0;
+    color: #333;
+}
+
+.curso-info p {
+    color: #777;
+    margin: 5px 0;
+}
+
+.curso-info a {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+
+/* Estilos para el footer */
+footer{
+   
+    display: flex;
+    flex-flow: row wrap;
+    padding: 9px 35px 35px;
+    color: #289976;
+    background-color:  #DAF7A6;
+    font-family: 'Rubik', sans-serif;
+    font-size: small;
+}
+
+.footer >*{
+        flex: 1 100%; 
+
+}
+
+.footer-left{
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+
+}
+
+.footer-left img{
+    width: 50%;
+
+}
+
+h3{
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.footer ul{
+    list-style: none;
+    padding-left: 0;
+
+}
+
+.footer li{
+    line-height: 2em;
+
+}
+
+.footer a{
+    text-decoration: none;
+}
+
+.footer-right{
+    display: -webkit-flex;
+    display: -moz-inline-box;
+    display: -ms-flexbox;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.footer-right > *{
+    flex: 1 50%;
+    margin-right: 1.25em;
+}
+
+.box a{
+    color: #289976;
+}
+
+.footer-bottom {
+    text-align: center;
+    color: #289976;
+    border-color: #289976
+
+}
+
+
+.footer-left p{
+    padding-right: 20%;
+    color: #289976;
+
+}
+
+.socials {
+    font-size: 30px; 
+    margin-left: 20px;
+    
+}
+
+.socials a i{
+    
+    padding: 10px 12px;
+    font-size: 20px;
+   
+
+}
+
+@media screen and (min-width: 600px){
+    .footer-right > *{
+        flex: 1;
+    }
+    .footer-left{
+        flex: 1 0px;
+    }
+    .footer-right{
+        flex: 2 0px;
+    }
+}

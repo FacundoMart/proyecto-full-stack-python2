@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo-header{
+    text-align: left;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+header {
+    background-color: #DAF7A6;
+    color: #289976;
+    text-align: center;
+    padding: 0.1 px 0;
+}
+
+main {
+    /*display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Utilizamos auto-fit */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px; /* Agregamos un ancho máximo */
+    margin: 0 auto; /* Centramos el contenido */
+}
+
+.nav-opciones li{
+    display: inline-block;
+    line-height: 50 px;
+    margin: 0  5px;
+}
+
+/* Estilos para los cursos */
+.curso {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.curso img {
+    max-width: 100%;
+    height: auto;
+}
+
+.curso h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.curso p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.curso .precio {
+    font-size: 1.25rem;
+    color: #27dc2b;
+    font-weight: bold;
+}
+
+.curso .boton {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #27dc2b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.curso .boton:hover {
+    background-color: #27dc2b;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color:  #DAF7A6;
+    color: #289976;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-section {
+    flex-basis: 30%;
+    padding: 20px;
+}
+
+.footer-section h2 {
+    font-size: 1.85rem;
+}
+
+.copyright {
+    flex-basis: 100%;
+    margin-top: 20px;
+}

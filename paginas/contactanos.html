@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-formulario.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/imagenes/Fondo-transparente.ico" type="image/x-icon"> 
+    <script src="https://kit.fontawesome.com/2cfd547298.js" crossorigin="anonymous"></script>
+    <title>Aprende+</title>
+</head>
+
+ 
+    <header>
+        <!-- Logo -->
+        <div class="logo-header">
+            <img src="/imagenes/isologo-mayusc.svg" alt="Logo" height="105px">
+        </div>
+    
+        <!-- Barra de búsqueda -->
+        <div class="barra-busqueda">
+            <input type="text" placeholder="Busca tu curso...">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    
+        <!-- Íconos de inicio de sesión y carrito de compra // desde link rel="" -->
+        <div class="iconos">  
+            <i class='bx bx-heart'></i>
+
+            <i class="fa-solid fa-cart-shopping"></i>
+            
+            <i class="fa-regular fa-user"></i>
+
+            
+        </div>
+
+    </header>
+
+    <!--menu de navegacion // acá estan las otras paginas-->
+    <nav class="menu-navegacion">
+        <ul>
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/paginas/categorias.html">Categorías</a></li>
+            <li><a href="/paginas/socios.html">Socios</a></li>
+            <li><a href="paginas/mis-clases.html">Mis clases</a></li>
+            <li><a href="paginas/mis-cursos.html">Mis cursos</a></li>
+            <li><a href="paginas/contactanos.html">Contactanos</a></li>
+        </ul>
+    </nav>
+
+   <br>
+   
+   <!--formulario de contacto-->
+
+
+   <body>
+    <div class="formulario-container">
+        <h1>Formulario de Contacto</h1>
+        <form id="formulario-general" class="formulario-general" action="https://formspree.io/f/myyqvlbw"
+        method="POST">
+            <div class="campo-container">
+                <div class="campo-pair">
+                    <div class="campo">
+                        <label for="nombre_apellido">Nombre y Apellido:</label>
+                        <input type="text" id="nombre_apellido" name="nombre_apellido">
+                    </div>
+                    <div class="campo">
+                        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                    </div>
+                </div>
+                <div class="campo-pair">
+                    <div class="campo">
+                        <label for="ciudad">Ciudad:</label>
+                        <input type="text" id="ciudad" name="ciudad" required>
+                    </div>
+                    <div class="campo">
+                        <label for="codigo_postal">Código Postal:</label>
+                        <input type="text" id="codigo_postal" name="codigo_postal" required>
+                    </div>
+                </div>
+                <div class="campo-pair">
+                    <div class="campo">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+                    <div class="campo">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                </div>
+                <div class="campo-pair">
+                    <div class="campo">
+                        <label for="genero">Género:</label>
+                        <select id="genero" name="genero" required>
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label for="estudios">Estudios Cursados:</label>
+                        <input type="text" id="estudios" name="estudios" required>
+                    </div>
+                </div>
+            </div>
+            <div class="campo">
+                <label>Interés en Cursos:</label>
+                <div class="intereses">
+                    <input type="checkbox" id="html" name="interes[]" value="HTML">
+                    <label for="html">HTML</label>
+                    <input type="checkbox" id="css" name="interes[]" value="CSS">
+                    <label for="css">CSS</label>
+                    <input type="checkbox" id="bootstrap" name="interes[]" value="Bootstrap">
+                    <label for="bootstrap">Bootstrap</label>
+                    <input type="checkbox" id="javascript" name="interes[]" value="JavaScript">
+                    <label for="javascript">JavaScript</label>
+                    <input type="checkbox" id="bases_de_datos" name="interes[]" value="Bases de Datos">
+                    <label for="bases_de_datos">Bases de Datos</label>
+                    <input type="checkbox" id="python" name="interes[]" value="Python">
+                    <label for="python">Python</label>
+                    <input type="checkbox" id="django" name="interes[]" value="Django">
+                    <label for="django">Django</label>
+                </div>
+            </div>
+            <div class="campo">
+                <label for="consulta">Consulta:</label>
+                <textarea id="consulta" name="consulta" rows="4" required></textarea>
+            </div>
+            <div class="campo">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div> 
+
+   <script src="app.js"></script>
+  
+   
+   <br>
+
+    <footer class="footer">
+        <div class="footer-left">
+            <img src="/imagenes/isologo-mayusc.svg" alt="Logo" height="95px">
+            <p>El uso de este sitio web está sujeto a la aceptación de nuestros términos y condiciones. Nos reservamos el derecho de tomar medidas en caso de violaciones a estas condiciones</p>
+           <br>
+            <div class="socials">
+                <a href="#"></a><i class='bx bxl-facebook'></i></a>
+                <a href="#"></a><i class='bx bxl-linkedin'></i></a>
+                <a href="#"></a><i class='bx bxl-instagram'></i></a>
+                <a href="#"></a><i class='bx bxl-youtube'></i></a>
+                <a href="#"></a><i class='bx bxl-twitter'></i></a>
+            </div>
+        </div>
+    </div>
+    
+    <ul class="footer-right">
+        <li>
+            <h3>PODUCTOS</h3>
+
+            <ul class="box">
+                <li><a href="#">Mis cursos</a></li>
+                <li><a href="#">Mis temas</a></li>
+                <li><a href="#">Empresas</a></li>
+                <li><a href="#">Colaboraciones</a></li>
+                <li><a href="#">Proyectos</a></li>
+            </ul>
+        </li>
+
+        <li class="features">
+            <h3>LINK DE INTERES</h3>
+
+            <ul class="box">
+                <li><a href="#">Recomendaciones</a></li>
+                <li><a href="#">Certificaciones</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Colaboraciones</a></li>
+                <li><a href="#">Proyectos</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <h3>INFORMACION</h3>
+            <ul class="box">
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Ayuda</a></li>
+                <li><a href="#">Profesores</a></li>
+                <li><a href="#">Alumnos</a></li>
+                <li><a href="#">Proyectos</a></li>
+                
+            </ul>
+        </li>
+
+    </ul>
+    
+    <div class="footer-bottom">
+    
+        <p>Todos los derechos reservados por © Aprende+ 2023</p>
+
+    </div>
+    </footer>
+
+
+
+
+</body>
+</html>
