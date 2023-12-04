@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const nombreApellido = document.getElementById("nombre_apellido").value;
       const email = document.getElementById("email").value;
       const intereses = document.querySelectorAll('input[name="interes[]"]:checked');
+      const consulta = document.getElementById("consulta").value;
   
       // Validación para el campo "Nombre y Apellido"
       if (nombreApellido.trim() === "") {
@@ -27,6 +28,13 @@ document.addEventListener("DOMContentLoaded", function () {
       if (intereses.length === 0) {
         alert("Por favor, seleccione al menos un interés en cursos");
         e.preventDefault();
+        return;
+      }
+
+      // Validación para el campo "consulta"
+      if (consulta.trim() === "") {
+        alert("Por favor, complete el campo de consulta");
+        e.preventDefault(); // Evitar el envío del formulario si hay errores
         return;
       }
   
